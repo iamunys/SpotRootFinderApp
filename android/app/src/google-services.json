@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "927646899468",
+    "firebase_url": "https://spotrootpartner-default-rtdb.firebaseio.com",
+    "project_id": "spotrootpartner",
+    "storage_bucket": "spotrootpartner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927646899468:android:7786771b9bba6a835ffd29",
+        "android_client_info": {
+          "package_name": "com.spotrootpartner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbDZcLtovmd__RBu-kPS19dEsYszlJZOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
