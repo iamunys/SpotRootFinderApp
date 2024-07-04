@@ -38,20 +38,20 @@ class HomeScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                GetBuilder<AdMobController>(
-                  init: AdMobController(),
-                  builder: (controller) => controller.largeNativeLoaderHome
-                      ? Container(
-                          alignment: Alignment.center,
-                          height: 50.h,
-                          child: Center(
-                            child: AdWidget(
-                                ad: controller.getNativeLargeAdInHome!),
-                          ),
-                        )
-                      : Container(
-                        ),
-                ),
+                // GetBuilder<AdMobController>(
+                //   init: AdMobController(),
+                //   builder: (controller) => controller.largeNativeLoaderHome
+                //       ? Container(
+                //           alignment: Alignment.center,
+                //           height: 50.h,
+                //           child: Center(
+                //             child: AdWidget(
+                //                 ad: controller.getNativeLargeAdInHome!),
+                //           ),
+                //         )
+                //       : Container(
+                //         ),
+                // ),
                 SizedBox(
                   height: 1.h,
                 ),
@@ -63,19 +63,19 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   height: 1.h,
                 ),
-                GetBuilder<AdMobController>(
-                  init: AdMobController(),
-                  builder: (controller) => controller.smallNativeLoaderHome
-                      ? Container(
-                          alignment: Alignment.center,
-                          height: 15.h,
-                          child: Center(
-                            child: AdWidget(
-                                ad: controller.getNativeSmallAdInHome!),
-                          ),
-                        )
-                      : Container(),
-                ),
+                // GetBuilder<AdMobController>(
+                //   init: AdMobController(),
+                //   builder: (controller) => controller.smallNativeLoaderHome
+                //       ? Container(
+                //           alignment: Alignment.center,
+                //           height: 15.h,
+                //           child: Center(
+                //             child: AdWidget(
+                //                 ad: controller.getNativeSmallAdInHome!),
+                //           ),
+                //         )
+                //       : Container(),
+                // ),
                 SizedBox(
                   height: 1.h,
                 ),

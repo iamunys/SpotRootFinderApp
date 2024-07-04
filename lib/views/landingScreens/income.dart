@@ -20,10 +20,10 @@ class IncomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     AdMobController adMobControll = Get.put(AdMobController());
 
-    adMobControll.setbannerLargeAdInSpot =
-        adMobControll.createBannerAd(size: AdSize.largeBanner);
-    adMobControll.setbannerLargeAdInSpot =
-        adMobControll.createBannerAd(size: AdSize.largeBanner);
+    // adMobControll.setbannerLargeAdInSpot =
+    //     adMobControll.createBannerAd(size: AdSize.largeBanner);
+    // adMobControll.setbannerLargeAdInSpot =
+    //     adMobControll.createBannerAd(size: AdSize.largeBanner);
     return Scaffold(
       backgroundColor: Constant.bgPrimary,
       appBar: AppBar(
@@ -41,18 +41,18 @@ class IncomeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: ListView(
             children: [
-              GetBuilder<AdMobController>(
-                builder: (controller) => controller.smallNativeLoaderPayment
-                    ? Container(
-                        alignment: Alignment.center,
-                        height: 15.h,
-                        child: Center(
-                          child: AdWidget(
-                              ad: controller.getNativeSmallAdInPayment!),
-                        ),
-                      )
-                    : Container(),
-              ),
+              // GetBuilder<AdMobController>(
+              //   builder: (controller) => controller.smallNativeLoaderPayment
+              //       ? Container(
+              //           alignment: Alignment.center,
+              //           height: 15.h,
+              //           child: Center(
+              //             child: AdWidget(
+              //                 ad: controller.getNativeSmallAdInPayment!),
+              //           ),
+              //         )
+              //       : Container(),
+              // ),
               const SizedBox(
                 height: 1,
               ),
@@ -76,18 +76,18 @@ class IncomeScreen extends StatelessWidget {
               SizedBox(
                 height: 1.h,
               ),
-              GetBuilder<AdMobController>(
-                builder: (controller) => controller.largeNativeLoaderPayment
-                    ? Container(
-                        alignment: Alignment.center,
-                        height: 50.h,
-                        child: Center(
-                          child: AdWidget(
-                              ad: controller.getNativeLargeAdInPayment!),
-                        ),
-                      )
-                    : Container(),
-              ),
+              // GetBuilder<AdMobController>(
+              //   builder: (controller) => controller.largeNativeLoaderPayment
+              //       ? Container(
+              //           alignment: Alignment.center,
+              //           height: 50.h,
+              //           child: Center(
+              //             child: AdWidget(
+              //                 ad: controller.getNativeLargeAdInPayment!),
+              //           ),
+              //         )
+              //       : Container(),
+              // ),
               SizedBox(
                 height: 1.h,
               ),
@@ -95,20 +95,20 @@ class IncomeScreen extends StatelessWidget {
               SizedBox(
                 height: 1.h,
               ),
-              adMobControll.bannerLargeAdInSpot == null
-                  ? Container(
-                      margin: const EdgeInsets.only(bottom: 0),
-                      height: 1.h,
-                      width: 100.w,
-                    )
-                  : Container(
-                      margin: const EdgeInsets.only(bottom: 0),
-                      height: 15.h,
-                      width: 100.w,
-                      child: Center(
-                          child:
-                              AdWidget(ad: adMobControll.bannerLargeAdInSpot!)),
-                    ),
+              // adMobControll.bannerLargeAdInSpot == null
+              //     ? Container(
+              //         margin: const EdgeInsets.only(bottom: 0),
+              //         height: 1.h,
+              //         width: 100.w,
+              //       )
+              //     : Container(
+              //         margin: const EdgeInsets.only(bottom: 0),
+              //         height: 15.h,
+              //         width: 100.w,
+              //         child: Center(
+              //             child:
+              //                 AdWidget(ad: adMobControll.bannerLargeAdInSpot!)),
+              //       ),
               SizedBox(
                 height: 1.h,
               ),

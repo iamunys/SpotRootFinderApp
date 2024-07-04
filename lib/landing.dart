@@ -23,14 +23,14 @@ class _LandingScreenState extends State<LandingScreen> {
 
   @override
   void initState() {
-    adMobController.nativeSmallAdInHome = adMobController.createNativeAd(
-        templateType: TemplateType.small, adType: 'homeSmall');
-    adMobController.nativeLargeAdInHome = adMobController.createNativeAd(
-        templateType: TemplateType.medium, adType: 'homeLarge');
-    adMobController.nativeSmallAdInPayment = adMobController.createNativeAd(
-        templateType: TemplateType.small, adType: 'paymentSmall');
-    adMobController.nativeLargeAdInPayment = adMobController.createNativeAd(
-        templateType: TemplateType.medium, adType: 'paymentLarge');
+    // adMobController.nativeSmallAdInHome = adMobController.createNativeAd(
+    //     templateType: TemplateType.small, adType: 'homeSmall');
+    // adMobController.nativeLargeAdInHome = adMobController.createNativeAd(
+    //     templateType: TemplateType.medium, adType: 'homeLarge');
+    // adMobController.nativeSmallAdInPayment = adMobController.createNativeAd(
+    //     templateType: TemplateType.small, adType: 'paymentSmall');
+    // adMobController.nativeLargeAdInPayment = adMobController.createNativeAd(
+    //     templateType: TemplateType.medium, adType: 'paymentLarge');
     loc.getCurrentPosition();
     super.initState();
   }
